@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/CSS/_header.css">
+<div class="header">
+    <div class="logo-1"><%- include('_logo') %></div>
+    <div class="nav-menu">
+        <% if(locals.user) {%>
+            <a href="/"><strong><%= user.firstName %></strong></a>
+            <a href="/logout" style="color: red;">LogOut</a>
+        <% }else{ %>
+            <a href="/sign-in">login</a>
+            <a href="/sign-up">register</a>
+        <% } %>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/CSS/signIn.css" />
+
+<div class="container m-5 d-flex flex-column">
+     <div class="container">
+          <h1 class="text-center mt-3">Welcome to HabitSense</h1>
+
+          <p class="text-center">
+               Your trusted companion in cultivating positive habits and achieving your goals. Sign in now to continue
+               your habit tracking journey and access your personalized account.
+          </p>
+     </div>
+
+     <form action="/login" method="post" class="form justify-content-center container mt-3">
+          <p>login to HabitSense</p>
+          <div class="group">
+               <input name="email" required="" class="main-input" type="text" />
+               <span class="highlight-span"></span>
+               <label class="lebal-email">email</label>
+          </div>
+          <div class="container-1">
+               <div class="group">
+                    <input name="password" required="" class="main-input" type="password" />
+                    <span class="highlight-span"></span>
+                    <label class="lebal-email">password</label>
+               </div>
+          </div>
+          <button type="submit" class="submit">submit</button>
+          <small class="small-redirect-signup">dont have an account? <a href="/sign-up">sign up</a></small>
+     </form>
+</div>

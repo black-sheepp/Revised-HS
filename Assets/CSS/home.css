@@ -1,0 +1,134 @@
+.text-color {
+    color: rgb(161, 255, 20);
+}
+
+
+.button {
+    margin-top: 15px;
+    color: #090909;
+    padding: 0.3em 1.7rem;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 3px 3px 6px rgb(161, 255, 20),
+        -3px -3px 6px rgb(161, 255, 20);
+}
+
+.button:hover {
+    border: 1px solid white;
+    background-color: rgb(161, 255, 20);
+}
+
+.button:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+        -4px -4px 12px #ffffff;
+}
+
+.habit-building {
+    /* border: 2px solid rgb(161, 255, 20); */
+    border: 4px solid rgb(161, 255, 20);
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #FDF0D5;
+}
+
+.habit-record{
+    width: 80%;
+    font-style: italic;
+    color: black;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+.field-input {
+
+}
+
+.day>input{
+    font-size: x-large;
+    padding-top: 5px;
+}
+
+.field-value {
+    font-size: large;
+    margin-right:30px;
+}
+
+
+
+
+
+/* delete.button */
+
+.noselect {
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #e62222;
+}
+
+.noselect,
+.noselect>span {
+    transition: 200ms;
+}
+
+.noselect .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+
+.noselect .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    color: rgb(81, 53, 53);
+    justify-content: center;
+}
+
+.noselect svg {
+    width: 15px;
+    fill: #eee;
+}
+
+.noselect:hover {
+    background: #ff3636;
+}
+
+.noselect:hover .text {
+    color: transparent;
+}
+
+.noselect:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+.noselect:focus {
+    outline: none;
+}
+
+.noselect:active .icon svg {
+    transform: scale(0.8);
+}
+
+/* update habit */
+.update-habit{
+    border-radius: 5px;
+    border: none;
+    padding: 6px 10px;
+    background-color: #16db65;
+}

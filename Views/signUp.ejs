@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="/CSS/signIn.css" />
+
+<div class="container m-5 d-flex flex-column">
+     <div class="container">
+          <h1 class="text-center mt-3">Welcome to HabitSense</h1>
+
+          <p class="text-center">
+               The premier habit tracker app designed to help you unleash your full potential and build a life of
+               positive habits. Sign up today and embark on a transformative journey towards personal growth and
+               success!
+          </p>
+     </div>
+     <form class="form container justify-content-center" action="/sign-up-done" method="post">
+          <p>register to HabitSense</p>
+          <div class="container-1">
+               <div class="group">
+                    <input name="firstName" required="" class="main-input" type="text" />
+                    <span class="highlight-span"></span>
+                    <label class="lebal-email">first name</label>
+               </div>
+          </div>
+          <div class="container-1">
+               <div class="group">
+                    <input name="lastName" required="" class="main-input" type="text" />
+                    <span class="highlight-span"></span>
+                    <label class="lebal-email">last name</label>
+               </div>
+          </div>
+          <div class="container-1">
+               <div class="group">
+                    <input name="phone" required="" class="main-input" type="text" />
+                    <span class="highlight-span"></span>
+                    <label class="lebal-email">phone</label>
+               </div>
+          </div>
+          <div class="container-1">
+               <div class="group">
+                    <input name="email" required="" class="main-input" type="email" />
+                    <span class="highlight-span"></span>
+                    <label class="lebal-email">email</label>
+               </div>
+          </div>
+
+          <div class="container-1">
+               <div class="group">
+                    <input name="password" required="" class="main-input" type="password" />
+                    <span class="highlight-span"></span>
+                    <label class="lebal-email">password</label>
+               </div>
+          </div>
+          <button class="submit" type="submit">submit</button>
+          <small class="small-redirect-signup"> have an account? <a href="/sign-in">sign in</a></small>
+     </form>
+</div>

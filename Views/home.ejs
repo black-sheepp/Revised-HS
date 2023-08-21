@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="/CSS/home.css" />
+
+<% if(locals.user) {%>
+<div class="container my-2 rounded-3">
+     <div class="p-3 mx-5 my-0 bg-black text-center text-color rounded-4">
+          <p class="fs-3 fw-normal">Welcome to HabitSense</p>
+          <small class="m-0 text-white"
+               >Create new habits to unlock your potential, boost confidence, and achieve lasting personal growth</small
+          >
+          <div class="my-0 mx-5">
+               <div class="my-0 mx-5">
+                    <div class="mx-5 text-black">
+                         <form action="/create-new-habit" class="mx-5" method="post">
+                              <div class="input-group">
+                                   <textarea
+                                        name="content"
+                                        class="form-control text-center px-5 rounded-3"
+                                        style="resize: none; font-size: larger; font-weight: bold"
+                                        placeholder="Add New Habit"
+                                        aria-label="With textarea"></textarea>
+                              </div>
+                              <button class="button">Add Habit</button>
+                         </form>
+                    </div>
+               </div>
+          </div>
+
+          <hr class="mt-5 mx-5" />
+
+          <% for(habitOne of habitrecord) {%>
+               <div class="mx-5 px-5 mb-2"><%- include('habitCard') %></div>
+          <% } %>
+
+     </div>
+</div>
+
+<% }else{ %>
+<div class="container">
+     <h1 class="text-center mt-3">Welcome to HabitSense</h1>
+
+     <p class="text-center">
+          Your ultimate companion for cultivating positive habits and achieving your goals! HabitSense is a powerful
+          habit tracker app designed to help you transform your daily routines and create lasting positive changes in
+          your life. With its intuitive interface and robust features, HabitSense empowers you to take control of your
+          habits, build new ones, and break free from old patterns. Whether you're aiming to exercise regularly, eat
+          healthier, read more, meditate, or simply boost your productivity, HabitSense is here to guide you every step
+          of the way. It allows you to effortlessly track and monitor your habits, providing valuable insights and
+          personalized reminders to keep you motivated and accountable.
+     </p>
+
+     <p class="container mt-3 position-absolute bottom-0 start-5">
+          <strong>To sign in to your HabitSense account, simply follow these steps:</strong> <br /><br />
+
+          <strong>1. &nbsp;</strong>Open the HabitSense app on your device. <br />
+          <strong>2. &nbsp;</strong>Tap on the "Sign In" button to proceed. <br />
+          <strong>3. &nbsp;</strong>Enter your registered email address or use your preferred social media account to
+          log in quickly and securely.
+          <br />
+          <strong>4. &nbsp;</strong>Provide your password to authenticate your account and ensure the privacy of your
+          data. <br />
+          <strong>5. &nbsp;</strong>If you've forgotten your password, don't worry! Just click on the "Forgot Password"
+          option and follow the instructions to reset it. <br />
+          <strong>6. &nbsp;</strong>Once you've entered the correct login credentials, tap on the "Sign In" button, and
+          voila! You're back in action. <br />
+          <strong>7. &nbsp;</strong>With your HabitSense account, you can seamlessly continue tracking your habits,
+          monitoring your progress, and enjoying all the features and benefits our app has to offer. Take advantage of
+          personalized reminders, insightful analytics, and a supportive community to stay motivated and committed to
+          your habit-building journey. <br /><br />
+
+          Remember, at HabitSense, we believe in your potential to create positive change. By signing in to your
+          account, you're one step closer to transforming your life and reaching your full potential. <br />
+
+          Sign in to HabitSense today and let's continue building a better version of yourself, one habit at a time.
+          Welcome back! <br />
+     </p>
+</div>
+
+<% } %>

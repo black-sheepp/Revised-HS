@@ -1,0 +1,11 @@
+<div class="container habit-building p-3">
+     <div class="d-flex justify-content-between p-1">
+          <div class="text-start habit-record" style="font-weight: bold;">
+               <%= habitOne.content %>
+          </div>
+          <a href="/delete-one-habit/<%= habitOne._id %>" style="padding-right: 10px">
+               <i class="fa-solid fa-trash fa-lg" style="color: #f2020e"></i>
+          </a>
+     </div>
+     <small class="float-xxl-end p-0" style="color: grey;"><%= String(habitOne.createdAt).slice(0,15) %></small>
+</div>
