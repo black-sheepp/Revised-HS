@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require('path')
 const App = express();
 const Port = 6700;
 const expressLayouts = require("express-ejs-layouts");
@@ -13,6 +14,7 @@ const MongoStore = require('connect-mongo')
  
 // set views 
 App.set("view engine", "ejs");
+App.set('views', path.join(__dirname) + '/Views');
 App.use(expressLayouts);
 App.use(express.static("./Assets"));
 // parse application/x-www-form-urlencoded
